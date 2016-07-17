@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="meuApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu app em Angular JS</title>
+</head>
+<body>
+<div ng-controller="MeuCtrl">
+    <h1>{{title}}</h1>
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script>
+    // Criando um módulo
+    angular.module('meuApp', ['ngRoute']);
+    angular.module('meuApp.Admin', []);
+    angular.module('meuApp.Directives', []);
+    // Obtendo um módulo
+    var modulo = angular.module('meuApp');
+    modulo.controller = ('MeuCtrl', function () {
+        
+    })
+    // angular.module('meuApp');
+
+</script>
+
+</body>
+</html>
